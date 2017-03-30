@@ -1,0 +1,33 @@
+select{
+  display:inline-block;
+  margin:3%;
+  text-align:center;
+}
+
+section {
+
+  display: block;
+  width: 1000px;
+  margin-left:200px;
+}
+
+.animal {
+  width: 300px;
+  height: 300px;
+  margin: 0;
+}
+
+.blanco-negro{
+  filter:grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.invertir-colores{
+  -webkit-filter:invert(.8);
+  filter:invert(.8);
+}
+
+.sepia{
+  -webkit-filter:sepia(1);
+  filter:sepia(1);
+}
