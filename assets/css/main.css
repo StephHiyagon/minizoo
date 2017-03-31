@@ -1,11 +1,13 @@
-select{
-  display:inline-block;
-  margin:3%;
+div{
   text-align:center;
+  margin:10px;
+}
+
+select {
+  background-color:#d6d4d4;
 }
 
 section {
-
   display: block;
   width: 1000px;
   margin-left:200px;
