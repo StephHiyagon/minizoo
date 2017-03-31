@@ -1,31 +1,29 @@
 var img = document.getElementsByClassName('animal');
 var select = document.getElementById('select');
+var ac;
 select.addEventListener("change", function(){
   switch (select.value) {
-    case "blanco-negro":{
-      for(var i=0; i<img.length;i++){
-        img[i].className="animal blanco-negro";
-      }
+    case "blanco-negro":
+      ac="animal blanco-negro";
       break;
-    }
 
-    case "original": {
-      for(var i=0; i<img.length;i++){
-      img[i].className="animal original";
-      }
+    case "original":
+      ac="animal original";
       break;
-    }
+
     case "invertir-colores":
-    for(var i=0; i<img.length;i++){
-      img[i].className="animal invertir-colores";
-    }
-    break;
-
-    case "sepia":{
-      for(var i=0; i<img.length;i++){
-        img[i].className="animal sepia";
-      }
+      ac="animal invertir-colores";
       break;
+
+    case "sepia":
+      ac="animal sepia";
+      break;
+    }
+    add(ac);
+  });
+
+  function add(item){
+    for(var i=0; i<img.length;i++){
+      img[i].setAttribute("class",item);
     }
   }
-});
