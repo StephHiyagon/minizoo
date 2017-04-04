@@ -1,6 +1,14 @@
+body {
+  text-align: center;
+  background-image: url(../img/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
 div{
   text-align:center;
-  margin:10px;
+  margin-bottom: 3%;
 }
 
 select {
